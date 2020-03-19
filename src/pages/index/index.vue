@@ -1,13 +1,11 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+		<view data-dia="1" @click="handle(1 , $event)">11</view>
 	</view>
 </template>
 
 <script>
+
 	export default {
 		data() {
 			return {
@@ -18,25 +16,20 @@
 
 		},
 		methods: {
+			handle(index , $event){
+				console.log($event)
+			}
 
 		}
 	}
 </script>
 
-<style>
+<style lang= 'less'>
 	.content {
 		text-align: center;
-		height: 400upx;
-	}
-
-	.logo {
-		height: 200upx;
-		width: 200upx;
-		margin-top: 200upx;
-	}
-
-	.title {
-		font-size: 36upx;
-		color: #8f8f94;
+		height: 400rpx;
+		.one{
+			color: #ccc;
+		}
 	}
 </style>
