@@ -2,6 +2,7 @@
   <view>
       <view>标题</view>
       <view class="slot-content">
+        1111
           <slot></slot>
       </view>
   </view>
